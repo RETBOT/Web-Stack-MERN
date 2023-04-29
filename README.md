@@ -2,13 +2,13 @@
 
 ## Tecnologías
 
-<table align="center">
+<table align="center" style="border: none; border-collapse: collapse;">
   <tr>
     <th>
-    - MongoDB
-    - Express
-    - React
-    - Node.js
+    - MongoDB <br>
+    - Express <br>
+    - React <br>
+    - Node.js 
     </th>
     <th><img src="https://github.com/RETBOT/RETBOT/blob/main/Imgs/MERN.png" alt="img" width="300" height="200"> </th>
   </tr>
