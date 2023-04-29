@@ -1,24 +1,14 @@
 # Web-Stack-MERN
 
 ## Tecnologías
-<style>
-table {
-  border: none;
-  border-collapse: collapse;
-}
-</style>
 
-<table align="center">
-  <tr>
-    <th>
-    - MongoDB <br>
-    - Express <br>
-    - React <br>
-    - Node.js 
-    </th>
-    <th><img src="https://github.com/RETBOT/RETBOT/blob/main/Imgs/MERN.png" alt="img" width="300" height="200"> </th>
-  </tr>
-</table>
+- MongoDB <br>
+- Express <br>
+- React <br>
+- Node.js 
+
+<img src="https://github.com/RETBOT/RETBOT/blob/main/Imgs/MERN.png" alt="img" width="300" height="200"> 
+  
 
 ## Descripción
 
