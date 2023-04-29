@@ -1,8 +1,14 @@
 # Web-Stack-MERN
 
 ## Tecnologías
+<style>
+table {
+  border: none;
+  border-collapse: collapse;
+}
+</style>
 
-<table align="center" style="border-style: none; border-width: 0px; border-color: white; border-collapse: collapse;">
+<table align="center">
   <tr>
     <th>
     - MongoDB <br>
