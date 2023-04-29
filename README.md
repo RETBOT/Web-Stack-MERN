@@ -2,7 +2,7 @@
 
 ## Tecnologías
 
-<table align="center" style="border: none; border-collapse: collapse;">
+<table align="center" style="border-style: none; border-width: 0px; border-color: white; border-collapse: collapse;">
   <tr>
     <th>
     - MongoDB <br>
