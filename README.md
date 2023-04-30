@@ -5,10 +5,10 @@
 - MongoDB <br>
 - Express <br>
 - React <br>
-- Node.js 
+- Node.js
 
 <img src="https://github.com/RETBOT/RETBOT/blob/main/Imgs/MERN.png" alt="img" width="300" height="200"> 
-  
+
 
 ## Descripción
 
@@ -26,5 +26,5 @@ Se ha implementado SEO On Page para mejorar la visibilidad en Google. La aplicac
 1. Clonar el repositorio
 2. Modificar las consants.js con sus crenciales
 3. Instalar las dependencias con `yarn install`
-4. Iniciar la aplicación con `yarn start`
-
+4. Iniciar el servidor dese la carpeta server con `yarn dev`
+5. Iniciar la aplicación web desde la carpea retbo con `yarn start`
