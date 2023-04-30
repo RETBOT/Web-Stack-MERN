@@ -1,12 +1,7 @@
-
 # dependencies
 /node_modules
-server/node_modules
 /.pnp
 .pnp.js
-server/constants.js
-server/yarn.lock
-
 
 # testing
 /coverage

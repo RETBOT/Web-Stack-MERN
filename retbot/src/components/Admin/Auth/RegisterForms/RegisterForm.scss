@@ -1,0 +1,8 @@
+@import "~/src/scss/index.scss";
+
+.register-form {
+   &__error {
+    text-align: center;
+    color: #e60606;
+   }
+}
