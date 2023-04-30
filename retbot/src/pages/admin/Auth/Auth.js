@@ -1,12 +1,11 @@
-import React, { useState, userState } from 'react';
+import React, { useState, userState } from "react";
 import { Tab } from "semantic-ui-react";
-import { RegisterForm } from '../../../components/Admin/Auth';
+import { RegisterForm, LoginForm } from "../../../components/Admin/Auth";
 import "./Auth.scss";
-import { Icon } from '../../../assets/inedx';
+import { Icon } from "../../../assets/inedx";
 
 export function Auth() {
-
-  const [activeIndex, setAciveIndex] = useState(1);
+  const [activeIndex, setAciveIndex] = useState(0);
 
   const openLogin = () => setAciveIndex(0);
 
@@ -15,25 +14,30 @@ export function Auth() {
       menuItem: "Entrar",
       render: () => (
         <Tab.Pane>
-          <h2> Login FORM </h2>
+          <LoginForm />
         </Tab.Pane>
       ),
     },
     {
       menuItem: "Nuevo usuario",
-      render:() => (
+      render: () => (
         <Tab.Pane>
-          <RegisterForm openLogin={openLogin}/>
+          <RegisterForm openLogin={openLogin} />
         </Tab.Pane>
-      )
-    }
-  ]
+      ),
+    },
+  ];
 
   return (
-    <div className='auth'>
+    <div className="auth">
       <Icon.Logo className="logo" />
 
-      <Tab panes={panes} className="auth__forms" activeIndex={activeIndex} onTabChange={(_, data) => setAciveIndex(data.activeIndex) }/>
+      <Tab
+        panes={panes}
+        className="auth__forms"
+        activeIndex={activeIndex}
+        onTabChange={(_, data) => setAciveIndex(data.activeIndex)}
+      />
     </div>
   );
 }
