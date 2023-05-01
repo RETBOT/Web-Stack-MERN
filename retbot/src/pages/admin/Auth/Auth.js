@@ -1,4 +1,4 @@
-import React, { useState, userState } from "react";
+import React, { useState } from "react";
 import { Tab } from "semantic-ui-react";
 import { RegisterForm, LoginForm } from "../../../components/Admin/Auth";
 import "./Auth.scss";
