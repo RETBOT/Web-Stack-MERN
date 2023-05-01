@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Tab } from "semantic-ui-react";
 import { RegisterForm, LoginForm } from "../../../components/Admin/Auth";
 import "./Auth.scss";
-import { Icon } from "../../../assets/inedx";
+import { image } from "../../../assets/inedx";
 
 export function Auth() {
   const [activeIndex, setAciveIndex] = useState(0);
@@ -30,7 +30,7 @@ export function Auth() {
 
   return (
     <div className="auth">
-      <Icon.Logo className="logo" />
+      <img src={image.IconPng} alt="Icon" className="logo" />
 
       <Tab
         panes={panes}
