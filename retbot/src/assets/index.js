@@ -1,5 +1,5 @@
 
-import {ReactComponent as Logo } from "./svg/retbot.svg";
+import { ReactComponent as Logo } from "./svg/retbot.svg";
 
 import authBg from "./jpg/auth-bg.jpg";
 import banner from "./jpg/banner.jpg";
@@ -21,7 +21,7 @@ const image = {
     IconPng,
 }
 
-export { 
+export {
     Icon,
     image,
- };
+};

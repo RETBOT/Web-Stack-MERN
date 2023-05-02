@@ -15,7 +15,7 @@ export function AdminMenu() {
     }
 
     return (
-        <Menu fluid vertical icon texto className='admin-menu'>
+        <Menu fluid vertical icon texto className='admin-menu' >
             {isAdmin && (
                 <>
                     <Menu.Item as={Link} to="/admin/users" active={isCurrentPath("/admin/users")} >

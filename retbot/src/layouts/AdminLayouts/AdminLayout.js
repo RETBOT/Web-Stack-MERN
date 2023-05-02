@@ -1,5 +1,5 @@
 import React from "react";
-import { image } from "../../assets/inedx";
+import { image } from "../../assets";
 import { AdminMenu, Logout } from "../../components/Admin/AdminLayouts/";
 import "./AdminLayout.scss";
 
