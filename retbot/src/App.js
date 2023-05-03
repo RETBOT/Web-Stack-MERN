@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import { WebRouter, AdminRouter } from "./router";
 import { AuthProvider } from "./context";
 
-function App() {
+export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
@@ -13,5 +13,3 @@ function App() {
     </AuthProvider>
   );
 }
-
-export default App;

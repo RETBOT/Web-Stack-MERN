@@ -12,7 +12,7 @@ export function initialValues(user) {
     };
 }
 
-export function validationSquema(user) {
+export function validationSchema(user) {
     return Yup.object({
         firstname: Yup.string().required(true),
         lastname: Yup.string().required(true),

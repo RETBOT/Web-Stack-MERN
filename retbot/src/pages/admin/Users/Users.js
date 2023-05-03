@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { Tab, Button } from "semantic-ui-react";
 import { BasicModal } from "../../../components/Shared";
 import { UserForm, ListUser } from "../../../components/Admin/Users";
@@ -8,15 +8,14 @@ export function Users() {
   const [showModal, setShowModal] = useState(false);
   const [reload, setReload] = useState(false);
 
-  const onOpelCloseModal = () => setShowModal((prevState) => !prevState);
-
+  const onOpenCloseModal = () => setShowModal((prevState) => !prevState);
   const onReload = () => setReload((prevState) => !prevState);
 
   const panes = [
     {
       menuItem: "Usuarios activos",
       render: () => (
-        <Tab.Pane attacher={false}>
+        <Tab.Pane attached={false}>
           <ListUser usersActive={true} reload={reload} onReload={onReload} />
         </Tab.Pane>
       ),
@@ -24,23 +23,29 @@ export function Users() {
     {
       menuItem: "Usuarios inactivos",
       render: () => (
-        <Tab.Pane attacher={false}>
+        <Tab.Pane attached={false}>
           <ListUser usersActive={false} reload={reload} onReload={onReload} />
         </Tab.Pane>
       ),
     },
-  ]
+  ];
+
   return (
     <>
-      <div className='users-page'>
-        <Button className='users-page__add' primary onClick={onOpelCloseModal}>
+      <div className="users-page">
+        <Button className="users-page__add" primary onClick={onOpenCloseModal}>
           Nuevo usuario
         </Button>
-        <Tab menu={{ secundary: true }} panes={panes} />
+        <Tab menu={{ secondary: true }} panes={panes} />
       </div>
-      <BasicModal show={showModal} close={onOpelCloseModal} title="Crear nuevo usuario">
-        <UserForm close={onOpelCloseModal} onReload={onReload} />
+
+      <BasicModal
+        show={showModal}
+        close={onOpenCloseModal}
+        title="Crear nuevo usuario"
+      >
+        <UserForm close={onOpenCloseModal} onReload={onReload} />
       </BasicModal>
     </>
-  )
+  );
 }

@@ -1,12 +1,10 @@
 import React from "react";
 import { image } from "../../assets";
-import { AdminMenu, Logout } from "../../components/Admin/AdminLayouts/";
+import { AdminMenu, Logout } from "../../components/Admin/AdminLayouts";
 import "./AdminLayout.scss";
-
 
 export function AdminLayout(props) {
   const { children } = props;
-
   return (
     <div className="admin-layout">
       <div className="admin-layout__left">
@@ -22,4 +20,3 @@ export function AdminLayout(props) {
     </div>
   );
 }
-

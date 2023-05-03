@@ -1,5 +1,5 @@
-import React from 'react';
-import { Form, Dropdown, Input, FormGroup } from "semantic-ui-react";
+import React from "react";
+import { Form, Dropdown, Input } from "semantic-ui-react";
 import { useFormik } from "formik";
 import { Menu } from "../../../../api";
 import { useAuth } from "../../../../hooks";
@@ -47,14 +47,16 @@ export function MenuForm(props) {
                     placeholder="Titulo"
                     onChange={formik.handleChange}
                     value={formik.values.title}
-                    error={formik.errors.title} />
+                    error={formik.errors.title}
+                />
                 <Form.Input
                     name="order"
                     type="number"
                     placeholder="order"
                     onChange={formik.handleChange}
                     value={formik.values.order}
-                    error={formik.errors.order} />
+                    error={formik.errors.order}
+                />
             </Form.Group>
 
             <Input
@@ -78,9 +80,9 @@ export function MenuForm(props) {
                 }
             />
 
-            <FormGroup />
+            <Form.Group />
 
-            <Form.Button type='sumbit' primary fluid loading={formik.isSubmitting}>
+            <Form.Button type="submit" primary fluid loading={formik.isSubmitting}>
                 {menu ? "Actualizar menú" : "Crear menú"}
             </Form.Button>
         </Form>

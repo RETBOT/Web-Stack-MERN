@@ -12,16 +12,15 @@ export function RegisterForm(props) {
   const [error, setError] = useState("");
 
   const formik = useFormik({
+    initialValues: initialValues(),
     validationSchema: validationSchema(),
     validateOnChange: false,
-    initialValues: initialValues(),
     onSubmit: async (formValue) => {
       try {
         setError("");
         await authController.register(formValue);
         openLogin();
       } catch (error) {
-        console.error(error);
         setError("Error en el servidor");
       }
     },
@@ -29,7 +28,6 @@ export function RegisterForm(props) {
 
   return (
     <Form className="register-form" onSubmit={formik.handleSubmit}>
-      <h3>Correo electronico: </h3>
       <Form.Input
         name="email"
         placeholder="Correo electronico"
@@ -37,7 +35,6 @@ export function RegisterForm(props) {
         value={formik.values.email}
         error={formik.errors.email}
       />
-      <h3>Contraseña: </h3>
       <Form.Input
         name="password"
         type="password"
@@ -46,11 +43,10 @@ export function RegisterForm(props) {
         value={formik.values.password}
         error={formik.errors.password}
       />
-      <h3>Repetir Contraseña: </h3>
       <Form.Input
         name="repeatPassword"
         type="password"
-        placeholder="Repetir Contraseña"
+        placeholder="Repetir contraseña"
         onChange={formik.handleChange}
         value={formik.values.repeatPassword}
         error={formik.errors.repeatPassword}
@@ -64,9 +60,11 @@ export function RegisterForm(props) {
         checked={formik.values.conditionsAccepted}
         error={formik.errors.conditionsAccepted}
       />
+
       <Form.Button type="submit" primary fluid loading={formik.isSubmitting}>
         Crear cuenta
       </Form.Button>
+
       <p className="register-form__error">{error}</p>
     </Form>
   );

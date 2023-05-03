@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { Tab, Button } from "semantic-ui-react";
 import { BasicModal } from "../../../components/Shared";
-import { ListMenu, MenuForm } from "../../../components/Admin/Menus"
+import { ListMenu, MenuForm } from "../../../components/Admin/Menus";
 import "./Menu.scss";
 
 export function Menu() {
@@ -9,8 +9,7 @@ export function Menu() {
   const [reload, setReload] = useState(false);
 
   const onOpenCloseModal = () => setShowModal((prevState) => !prevState);
-  const onReload = () => setReload((prevState) => !prevState);
-
+  const onReload = () => setReload((prevStata) => !prevStata);
 
   const panes = [
     {
@@ -29,13 +28,13 @@ export function Menu() {
         </Tab.Pane>
       ),
     },
-  ]
+  ];
 
   return (
     <>
-      <div className='menu-page'>
-        <Button className='menu-page__add' primary onClick={onOpenCloseModal}>
-          Nuevo Menu
+      <div className="menu-page">
+        <Button className="menu-page__add" primary onClick={onOpenCloseModal}>
+          Nuevo menu
         </Button>
         <Tab menu={{ secondary: true }} panes={panes} />
       </div>
@@ -44,5 +43,5 @@ export function Menu() {
         <MenuForm onClose={onOpenCloseModal} onReload={onReload} />
       </BasicModal>
     </>
-  )
+  );
 }

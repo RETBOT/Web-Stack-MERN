@@ -5,9 +5,9 @@ import "./Auth.scss";
 import { image } from "../../../assets";
 
 export function Auth() {
-  const [activeIndex, setAciveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const openLogin = () => setAciveIndex(0);
+  const openLogin = () => setActiveIndex(0);
 
   const panes = [
     {
@@ -31,12 +31,11 @@ export function Auth() {
   return (
     <div className="auth">
       <img src={image.IconPng} alt="Icon" className="logo" />
-
       <Tab
         panes={panes}
         className="auth__forms"
         activeIndex={activeIndex}
-        onTabChange={(_, data) => setAciveIndex(data.activeIndex)}
+        onTabChange={(_, data) => setActiveIndex(data.activeIndex)}
       />
     </div>
   );

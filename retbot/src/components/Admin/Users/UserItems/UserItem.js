@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Image, Button, Icon, Confirm } from "semantic-ui-react";
 import { image } from "../../../../assets";
-import { ENV } from "../../../../utils";
-import { BasicModal } from "../../../Shared"
 import { User } from "../../../../api";
 import { useAuth } from "../../../../hooks";
+import { BasicModal } from "../../../Shared";
+import { ENV } from "../../../../utils";
 import { UserForm } from "../UserForms";
 import "./UserItem.scss";
 
@@ -28,7 +28,6 @@ export function UserItem(props) {
         setTitleModal(`Actualizar ${user.email}`);
         onOpenCloseModal();
     };
-
 
     const openDesactivateActivateConfim = () => {
         setIsDelete(false);
@@ -115,5 +114,5 @@ export function UserItem(props) {
                 size="mini"
             />
         </>
-    )
+    );
 }

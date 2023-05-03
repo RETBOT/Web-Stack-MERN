@@ -3,8 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import { AdminLayout } from "../layouts";
 import { Auth, Users, Blog, Courses, Menu, Newsletter } from "../pages/admin";
 import { useAuth } from "../hooks";
-// eslint-disable-next-line
-const user = null;
 
 export function AdminRouter() {
   const { user } = useAuth();
@@ -30,7 +28,6 @@ export function AdminRouter() {
               element={loadLayout(AdminLayout, Blog)}
             />
           ))}
-          <Route path="/admin" element={<Auth />} />
           <Route path="/admin/users" element={loadLayout(AdminLayout, Users)} />
           <Route
             path="/admin/courses"
