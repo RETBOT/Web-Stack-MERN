@@ -4,10 +4,13 @@
 .newsletter-page {
     
     .ui.tab.segment {
-        height: calc(100vh - 150px);
+        height: calc(100vh - 110px);
         overflow-y: scroll; 
         &:-webkit-scrollbar{
          display: none;
         }
      }
+     .ui.menu.secondary {
+        min-height: 0px;
+    }
 }
