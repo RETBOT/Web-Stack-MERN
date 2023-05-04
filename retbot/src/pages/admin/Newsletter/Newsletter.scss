@@ -1,16 +1,8 @@
 @import "~/src/scss/index.scss";
 
-.users-page {
-    &__add {
-        position: absolute;
-        right: 0;
-        top: 0;
 
-        > .ui.button {
-            margin: 0;
-        }
-    }
-
+.newsletter-page {
+    
     .ui.tab.segment {
         height: calc(100vh - 150px);
         overflow-y: scroll; 
