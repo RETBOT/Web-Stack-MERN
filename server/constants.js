@@ -1,4 +1,4 @@
-// Configurar en atlas db
+// Configurar en atlas mongodb
 const DB_USER = "USER";
 const DB_PASSWORD = "PASSWORD";
 const DB_HOST = "HOST";
