@@ -1,0 +1,52 @@
+@import "~/src/scss/index.scss";
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin: 30px 30px 30px 30px;
+
+    &__titulo {
+        color: $text-light;
+    }
+
+    &__button {
+        > h4 {
+            margin-right: 30px;
+            color: $text-light;
+            text-transform: uppercase;
+        }
+
+        i {
+            text-align: center;
+        }
+    }
+}
+
+
+.red-social {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin: 30px 30px 50px 100px;
+    color: $text-light;
+    text-transform: uppercase;
+
+    &-icono {
+        display: inline-block;
+        align-items: center;
+        i {
+            align-items: center;
+            text-align: center;
+            font-size: 20px; /* Ajusta el tamaño del icono */
+        }
+      }
+
+    &-nombre {
+        margin-right: 10px;
+    }
+
+    &-boton {
+        border-radius: 4px;
+        padding: 8px 12px;
+      }
+  }
