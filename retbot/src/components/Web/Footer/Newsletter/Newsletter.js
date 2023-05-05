@@ -42,10 +42,9 @@ export function Newsletter() {
                     !Me suscribo!
                 </Form.Button>
             </Form>
-
-            {success && (
-                <p className='success'>!Email registrado correctamente</p>
-            )}
+            {
+                success && (<p className='success'>!Email registrado correctamente</p>)
+            }
 
         </div>
     )

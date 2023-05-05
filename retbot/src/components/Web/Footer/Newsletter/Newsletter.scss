@@ -12,7 +12,11 @@
     .success {
         color: $success;
         text-align: center;
-        font-size: 12px;
-
+        font-size: 15px;
+    }
+    .error {
+        color:red;
+        text-align: center;
+        font-size: 15px;
     }
 }

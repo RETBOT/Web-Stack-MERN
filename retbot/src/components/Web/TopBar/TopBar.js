@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Button, Icon } from 'semantic-ui-react'
+import { Container, Button } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
-import { size, map } from 'lodash';
+import { map } from 'lodash';
 import { image } from '../../../assets';
 import { Menu } from "../../../api"
 import { socialData } from '../../../utils';
