@@ -38,6 +38,11 @@ npm install --global yarn
 5. Iniciar el servidor dese la carpeta server con `yarn dev`
 6. Iniciar la aplicación web desde la carpea retbot con `yarn start`
 
+## Video 
+
+https://user-images.githubusercontent.com/71575985/236654438-dc468126-52d0-4ee0-97ff-0381a2c7332b.mp4
+
+
 ## Imagenes
 
 ### Home
