@@ -46,6 +46,15 @@ export function TopBar() {
                             color={social.type}
                             icon={social.type} />
                     ))}
+
+                    <Button
+                        key="login"
+                        as="a"
+                        target="_blank"
+                        href={`${ENV.BASE_PATH_PAGWEB}#/admin`}
+                        primary
+                        icon="sign in"
+                    />
                 </div>
             </Container>
         </div>
