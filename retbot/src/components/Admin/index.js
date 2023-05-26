@@ -4,3 +4,4 @@ export * from "./Users";
 export * from "./Menus";
 export * from "./Newsletters"
 export * from "./Posts"
+export * from "./Contacts";

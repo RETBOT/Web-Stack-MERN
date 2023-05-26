@@ -1,0 +1,56 @@
+@import "~/src/scss/index.scss";
+
+.mensaje-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 50px;
+    max-width: 800px;
+    color: $text-light;
+    font-size: 30px;
+    text-transform: uppercase;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        margin-top: 30px;
+        width: 100%;
+
+        &__nombre,
+        &__email {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            span {
+                width: 20%;
+            }
+
+            input {
+                width: 70%;
+            }
+        }
+
+        &__asunto {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        &__mensaje {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        &__button {
+            margin-top: 30px;
+        }
+    }
+
+}
+
+.message-enviado,
+.message-no-enviado {
+    font-size: 10 !important;
+}

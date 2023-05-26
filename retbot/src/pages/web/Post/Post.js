@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Loader } from 'semantic-ui-react'
+import { Container, Loader, Image } from 'semantic-ui-react'
 import { useParams } from 'react-router-dom'
 import { Post as PostController } from '../../../api'
+import { ENV } from '../../../utils'
 import "./Post.scss"
 
 const postController = new PostController();
@@ -29,6 +30,13 @@ export function Post() {
         className='content'
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
+
+      {post.miniature ?
+        <div className='post-image'>
+          <Image src={`${ENV.BASE_PATH}/${post.miniature}`} fluid />
+        </div> : <Image />}
+
+
     </Container>
   )
 }

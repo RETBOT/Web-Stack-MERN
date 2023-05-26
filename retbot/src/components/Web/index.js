@@ -4,4 +4,5 @@ export * from "./Banner";
 export * from "./HomeCourses";
 export * from "./HowMyCorsesWork";
 export * from "./Reviews";
-export * from "./Courses"
+export * from "./Courses";
+export * from "./Contact";

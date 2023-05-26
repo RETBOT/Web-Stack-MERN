@@ -4,3 +4,4 @@ export * from "./Blog";
 export * from "./Courses";
 export * from "./Menu";
 export * from "./Newsletter";
+export * from "./Contact";
