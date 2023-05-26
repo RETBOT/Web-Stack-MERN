@@ -1,5 +1,5 @@
 const express = require("express");
-const {API_VERSION} = require("./constants");
+const { API_VERSION } = require("./constants");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
@@ -7,14 +7,15 @@ const app = express();
 
 // Import routings
 const authRoutes = require("./router/auth");
-const userRoutes = require("./router/user"); 
+const userRoutes = require("./router/user");
 const menuRoutes = require("./router/menu");
 const courseRoutes = require("./router/course");
 const postRoutes = require("./router/post");
 const newsletterRoutes = require("./router/newsletter");
+const contactRoutes = require("./router/contact");
 
 // Configure Body Parse
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Configure static folder
@@ -30,5 +31,7 @@ app.use(`/api/${API_VERSION}`, menuRoutes);
 app.use(`/api/${API_VERSION}`, courseRoutes);
 app.use(`/api/${API_VERSION}`, postRoutes);
 app.use(`/api/${API_VERSION}`, newsletterRoutes);
+app.use(`/api/${API_VERSION}`, contactRoutes);
+
 
 module.exports = app;
