@@ -3,7 +3,6 @@
 ## Url página web en funcionamiento
 
 - https://retbot.netlify.app/
-- https://retbot-blog.web.app/
 
 ## Tecnologías
 
